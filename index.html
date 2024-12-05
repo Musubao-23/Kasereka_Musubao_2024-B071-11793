@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html>
+<ht<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="style.css" href="styles.css">
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .custom-footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .carousel-item img {
+            max-height: 300px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .card-deck .card {
+            margin-bottom: 20px;
+        }
+        p{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#carouselSection">Carousel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formSection">Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cardsSection">Cards</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+   
+
+    <!-- Form Section -->
+    <section id="formSection" class="my-5">
+        <div class="container">
+            
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="cardsSection" class="my-5">
+        <div class="container">
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                       
+                        <div class="card-body">
+                            <h5 class="card-title">Home</h5>
+                            <p class ="card-text">This website was developped by Kaserteka Musubao in 2024.
+                                 I began this project from 2020 during the COVI-19 pandemic period.today marks the comp-lition and longing of my wesite
+                                 i thnk the Almighty  God for the wisdom knowlegde and understandig he has granted me wit .
+                                 the website is now open for use. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                       
+                        <div class="card-body">
+                            <h5 class="card-title">About me</h5>
+                            <p class="card-text">I am Kasereka Musubao a web developper ,
+                                 i graduated at Makerere universityin 2012, where i got my masters degree in software enbgineering
+                                i have sofar worked with many web development compunies so i have a working eperie ce of approximately
+                            10 years. my hobies include; matookewith fish, pork, cassava with beans and posho with cow peas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact us</h5>
+                            <p class="card-text">For more information u n acn link with usw via our social media platforms like facebook,
+                                 instagram and others or u can directly whatsapp us us via 07604287489.Thanks so much</p>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+
+    <!-- Footer Section -->
+    <footer class="custom-footer">
+        <p>&copy;web devolopers association.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js (for proper functioning of Bootstrap components like dropdowns, modals, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Form submitted successfully! Thank you for reaching out, ' + name);
+                // Clear form
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+
+</html>
+
+
